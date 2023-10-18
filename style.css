@@ -69,6 +69,12 @@ label {
     margin-top: -90px;
 }
 
+.imagem-musica {
+   position: absolute;
+   left: 470px;
+   margin-top: 20px;
+   
+}
 
 /* Esrilização do relogio */
 .container {
