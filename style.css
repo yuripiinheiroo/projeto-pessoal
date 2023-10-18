@@ -69,6 +69,19 @@ label {
     margin-top: -90px;
 }
 
+/* Esrilização do relogio */
+.container {
+    text-align: center;
+    padding-top: 20px;
+}
+.clock {
+    color: gold;
+    font-size: 48px;
+}
+.countdown {
+    color: gold;
+    font-size: 24px;
+}
 
 /* Media Query para telas menores */
 @media only screen and (max-width: 768px) {
