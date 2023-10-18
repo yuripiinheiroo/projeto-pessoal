@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    background-color:black;
+}
+
+
+
+.galeria{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.imagem{
+    aspect-ratio: 9/16; /*para vertical */
+    min-width: 0; /*largura minima*/
+    flex: 1 1 10px; /*adaptação dentro da caixa*/
+    object-fit: cover; /* Para dar qualidade a imagem*/
+    opacity: .5;
+    transition: .3s;
+}
+
+.imagem:hover{
+    flex: 1 1 100px;
+    opacity: 1;
+}
+
+h1{
+    text-align: center;
+    margin-top: 70px;
+    color: aliceblue;
+}
+
+h2{
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+   margin-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+input[type="checkbox"] {
+    transform: scale(2);
+    margin-right: 10px;
+}
+label {
+    font-size: 24px;
+    color: aliceblue;
+}
+
+.coracao{
+    margin-left: 868px;
+    margin-top: -90px;
+}
