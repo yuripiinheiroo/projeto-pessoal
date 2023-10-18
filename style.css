@@ -68,3 +68,20 @@ label {
     margin-left: 868px;
     margin-top: -90px;
 }
+
+
+/* Media Query para telas menores */
+@media only screen and (max-width: 768px) {
+    .galeria {
+        flex-direction: column;
+        align-items: center;
+    }
+    .imagem {
+        width: 80%;
+    }
+    .coracao{
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
