@@ -89,9 +89,42 @@
             <input type="checkbox" id="item14" name="item14" checked>
             <label for="item3">Jogando o meu jogo</label>
         </div>
-    
-        <!-- Adicione os outros itens de acordo com o modelo acima -->
     </form>
 
+    <div class="container">
+        <h1 style="color: white;">O dia que Conheci <br>o Amor da minha Vida</h1>
+        <div id="clock" class="clock"></div>
+        <div id="countdown" class="countdown"></div>
+    </div>
+    
+    <script>
+        // Data inicial
+        var dataInicial = new Date('2022-10-06');
+    
+        // Atualiza o contador de dias a cada segundo
+        setInterval(function() {
+            // Data atual
+            var dataAtual = new Date();
+    
+            // Calcula a diferença em milissegundos
+            var diferenca = dataAtual - dataInicial;
+    
+            // Calcula horas, minutos e segundos
+            var horas = Math.floor(diferenca / (1000 * 60 * 60) % 24);
+            var minutos = Math.floor(diferenca / (1000 * 60) % 60);
+            var segundos = Math.floor(diferenca / 1000 % 60);
+    
+            // Formata os números com dois dígitos se necessário
+            if (horas < 10) horas = '0' + horas;
+            if (minutos < 10) minutos = '0' + minutos;
+            if (segundos < 10) segundos = '0' + segundos;
+    
+            // Mostra o resultado na página
+            document.getElementById('clock').innerHTML = horas + ':' + minutos + ':' + segundos;
+            
+            var dias = Math.floor(diferenca / (1000 * 60 * 60 * 24));
+            document.getElementById('countdown').innerHTML = dias + ' dias';
+        }, 1000);
+    </script>    
 </body>
 </html>
